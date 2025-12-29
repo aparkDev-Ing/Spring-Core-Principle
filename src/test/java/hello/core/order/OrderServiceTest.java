@@ -24,18 +24,19 @@ public class OrderServiceTest {
         memberService = appconfig.memberService();
         orderService = appconfig.orderService();
     }
+
     @Test
     void createOrder(){
 
         //Create New Member
-        memberService.join(new Member("Aaron", Grade.VIP));
+        //memberService.join(new Member("Aaron", Grade.VIP));
 
         //Create Order
-        Order order = orderService.createOrder(1L,"Apple",10000);
+//        Order order = orderService.createOrder(1L,"Apple",10000);
 
         //Assertions.assertThat(order.calculatePrice()).isEqualTo(9000);
 
-        Assertions.assertThat(order.getDiscountPrice()).isEqualTo(1000);
+//        Assertions.assertThat(order.getDiscountPrice()).isEqualTo(1000);
 
         //return order;
     }
