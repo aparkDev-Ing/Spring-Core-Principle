@@ -12,6 +12,10 @@ public class Member {
 
     private Long id;
 
+    public Member() {
+        this.id = idG.incrementAndGet();
+    }
+
     public Member(String name,Grade grade){
         this.name = name;
         this.id=idG.incrementAndGet();
