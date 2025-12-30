@@ -23,7 +23,7 @@ public class AppController {
 
     @GetMapping("/")
     public String home(){
-        return "Hello";
+        return "Hello Github Actions!";
     }
 
     @PostMapping("/member/join")
