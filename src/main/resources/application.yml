@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: core
+
+aws:
+  access-key: ABCD
+  secret-key: 1234
