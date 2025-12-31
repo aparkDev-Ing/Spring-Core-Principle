@@ -53,7 +53,10 @@ jobs:
           java-version: 17
 
       - name: create application.yml
-        run: echo "${{secrets.APPLICATION_PROPERTIES}}" > ./src/main/resources/application.yml
+        run: |
+          pwd
+          mkdir ./src/main/resources
+          echo "${{secrets.APPLICATION_PROPERTIES}}" > ./src/main/resources/application.yml
 
       - name: Test and Build
         run: ./gradlew clean build
